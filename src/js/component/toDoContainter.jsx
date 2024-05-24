@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import ToDoList from "./todoInput";
+import ToDoList from "./toDoList";
 
 
 
