@@ -1,13 +1,17 @@
 import React from "react";
-import ToDoContainer from "./toDoContainter";
-
-//include images into your bundle
+import TodoList from "./todoList";
 
 
-//create your first component
+
+
 const Home = () => {
 	return(
-		<ToDoContainer />
+		<div>
+			<div className="container">
+            <h1>todos</h1>
+				<TodoList />
+			</div>
+		</div>	
 	)
 };
 
