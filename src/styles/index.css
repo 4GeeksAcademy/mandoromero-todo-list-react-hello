@@ -4,9 +4,24 @@
     border: 1px black solid;
     margin-top: 40px;
 }
-.to-to {
+/* .to-to {
     display: flex;
+} */
+.to-do {
+    position: relative;
+    padding-right: 25px; 
 }
+
 .delete {
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
+
+.to-do:hover .delete {
+    opacity: 1;
+}
+
