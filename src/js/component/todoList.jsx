@@ -29,16 +29,16 @@ const TodoList = () => {
         const newList = list.filter((todo) => todo.id !== id);
         setList(newList);
     };
-    useEffect(() => {
-        async function createUser (){
-            let response = await fetch("https://playground.4geeks.com/todo/users/mandoromero", {
-                method:"POST",
-                headers: {"Content-type":"application/json"}
-            })
-            let data = await response.json()
-        }
-        createUser()
-    }, [])
+    // useEffect(() => {
+    //     async function createUser (){
+    //         let response = await fetch("https://playground.4geeks.com/todo/users/mandoromero", {
+    //             method:"POST",
+    //             headers: {"Content-type":"application/json"}
+    //         })
+    //         let data = await response.json()
+    //     }
+    //     createUser()
+    // }, [])
     // useEffect(() => {}, [todo])
     return (
         <div className="parent">
@@ -81,6 +81,8 @@ const TodoList = () => {
         </div>
     );
 };
+
+
 
 export default TodoList;
 
